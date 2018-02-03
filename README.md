@@ -29,17 +29,19 @@ Kotlin 1.2.0 (JRE 1.8.0_161-b12) | 0.8s
 C# / Mono 3.2.8                  | 1.66s
 
 ### Group 3
-Language                         | Finished in seconds
----------------------------------|--------------------
-JavaScript/node.js 6.11.5        | 1.95s
-Python 2.7.6                     | 45s
-Python 3.6.1                     | 66s
-Python 3.6.1 / Cython 0.27.3     | 0.38s
-Python 3.6.1 / Numba 0.33.0      | 2.2s
-Python 3.5.3 / PyPy 5.10.1       | 2.6s
-Ruby 2.4.0p0                     | 15s
-Crystal 0.24.1                   | 2.76s
-Crystal 0.24.1 pre-compiled      | 1.65s
+Language                              | Finished in seconds
+--------------------------------------|--------------------
+JavaScript/node.js 6.11.5             | 1.95s
+Python 2.7.6                          | 45s
+Python 3.4.3                          | 39s
+Python 3.6.1 (non-optimized)          | 66s
+Python 3.6.4 (--enable-optimizations) | 47s
+Python 3.6.1 / Cython 0.27.3          | 0.38s
+Python 3.6.1 / Numba 0.33.0           | 2.2s
+Python 3.5.3 / PyPy 5.10.1            | 2.6s
+Ruby 2.4.0p0                          | 15s
+Crystal 0.24.1                        | 2.76s
+Crystal 0.24.1 pre-compiled           | 1.65s
 
 ### Group 4
 Language                         | Finished in seconds
