@@ -15,9 +15,10 @@ C/clang 4.0.1 (no optimization)  | 2.08s
 C/clang 4.0.1 (-O3 optimization) | 1.13s
 Rust 1.23.0 (no optimization)    | 2.4s
 Rust 1.23.0 (-O optimization)    | 0.8s
-Go 1.9.2                         | 2.25s
-Go 1.9.2 pre-compiled            | 1.97s
+Go 1.9.2 (go run)                | 2.25s
+Go 1.9.2 (compiled)              | 1.97s
 OCaml 4.02.3                     | 1.48s
+F# 3.0                           | 1.45s
 
 ### Group 2
 Language                         | Finished in seconds
@@ -40,8 +41,9 @@ Python 3.6.1 / Cython 0.27.3          | 0.38s
 Python 3.6.1 / Numba 0.33.0           | 2.2s
 Python 3.5.3 / PyPy 5.10.1            | 2.6s
 Ruby 2.4.0p0                          | 15s
-Crystal 0.24.1                        | 2.76s
-Crystal 0.24.1 pre-compiled           | 1.65s
+Crystal 0.24.1 (crystal run fib.rb)   | 2.76s
+Crystal 0.24.1 (compiled)             | 1.65s
+Crystal 0.24.1 (--release compiled)   | 1.11s
 
 ### Group 4
 Language                         | Finished in seconds
