@@ -44,6 +44,7 @@ Ruby 2.4.0p0                          | 15s
 Crystal 0.24.1 (crystal run fib.rb)   | 2.76s
 Crystal 0.24.1 (compiled)             | 1.65s
 Crystal 0.24.1 (--release compiled)   | 1.11s
+Julia 0.6.2                           | 1.51s
 
 ### Group 4
 Language                         | Finished in seconds
@@ -92,6 +93,19 @@ def fib(n):
     return fib(n-2) + fib(n-1)
 
 print(fib(40))
+```
+
+### Julia code
+```julia
+function fib(n)
+  if (n < 3)
+    return 1
+  else
+    return fib(n - 2) + fib(n - 1)
+  end
+end
+
+println(fib(40))
 ```
 
 ### Elixir code
