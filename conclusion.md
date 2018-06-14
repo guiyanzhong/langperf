@@ -2,7 +2,8 @@
 
 Just some rough thoughts:
 
-* CPU-bound tasks: C++;
-* Data analysis: Python with Numba;
-* Network servers: Elixir;
-* Small scripts: Ruby.
+* Data related tasks: Julia;
+* Interfacing 3rd-party API: C++;
+* Massive network servers: Elixir, Golang;
+* Small scripts: Ruby, Python;
+* Overall: Julia for most tasks, others for certain applications.
