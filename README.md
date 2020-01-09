@@ -15,6 +15,8 @@ C/clang 4.0.1 (no optimization)  | 2.08s
 C/clang 4.0.1 (-O3 optimization) | 1.13s
 Rust 1.23.0 (no optimization)    | 2.4s
 Rust 1.23.0 (-O optimization)    | 0.8s
+Swift 5.11-dev (no optimization) | 2.5s
+Swift 5.11-dev (-O optimization) | 1.57s
 Go 1.9.2 (go run)                | 2.25s
 Go 1.9.2 (compiled)              | 1.97s
 OCaml 4.02.3                     | 1.48s
