@@ -1,11 +1,11 @@
-## Programming language raw performance tests
+# Programming language raw performance tests
 
 Some simple tests measuring performance of programming languages.
 Maybe not so scientific, it just provides a brief concept.
 
 Here are the results for __Fibonacci sequence fib(40)__ using recursive function calls, single-threaded, on Thinkpad X200, Ubuntu 14.04:
 
-### Group 1
+## Group 1
 
 Language                         | Finished in seconds
 ---------------------------------|--------------------
@@ -22,7 +22,8 @@ Go 1.9.2 (compiled)              | 1.97s
 OCaml 4.02.3                     | 1.48s
 F# 3.0                           | 1.45s
 
-### Group 2
+## Group 2
+
 Language                         | Finished in seconds
 ---------------------------------|--------------------
 Java 1.8.0_161                   | 0.76s
@@ -31,7 +32,8 @@ Clojure 1.9.0                    | 4.4s
 Kotlin 1.2.0 (JRE 1.8.0_161-b12) | 0.8s
 C# / Mono 3.2.8                  | 1.66s
 
-### Group 3
+## Group 3
+
 Language                              | Finished in seconds
 --------------------------------------|--------------------
 JavaScript/node.js 6.11.5             | 1.95s
@@ -48,12 +50,16 @@ Crystal 0.24.1 (compiled)             | 1.65s
 Crystal 0.24.1 (--release compiled)   | 1.11s
 Julia 0.6.2                           | 1.51s
 
-### Group 4
+## Group 4
+
 Language                         | Finished in seconds
 ---------------------------------|--------------------
 Elixir 1.5.2 / Erlang/OTP 20     | 5.7s
 
+## Source Code
+
 ### C code
+
 ```c
 #include <stdio.h>
 
@@ -74,6 +80,7 @@ int main(int argc, char const *argv[])
 ```
 
 ### Ruby / Crystal code
+
 ```ruby
 def fib(n)
   if n < 3
@@ -87,6 +94,7 @@ puts(fib(40))
 ```
 
 ### Python code
+
 ```python
 def fib(n):
   if n < 3:
@@ -98,6 +106,7 @@ print(fib(40))
 ```
 
 ### Julia code
+
 ```julia
 function fib(n)
   if (n < 3)
@@ -111,6 +120,7 @@ println(fib(40))
 ```
 
 ### Elixir code
+
 ```ruby
 defmodule Math do
 
@@ -128,6 +138,7 @@ IO.puts Math.fib(40)
 ```
 
 ### Go code
+
 ```go
 package main
 
@@ -148,6 +159,7 @@ func main() {
 ```
 
 ### Java code
+
 ```java
 public class Fib {
     static int fib(int n) {
@@ -169,6 +181,7 @@ public class Fib {
 ```
 
 ### Rust code
+
 ```rust
 fn fib(n: i64) -> i64 {
     if n < 3 {
@@ -181,6 +194,20 @@ fn fib(n: i64) -> i64 {
 fn main() {
     print!("fib(40) = {}\n", fib(40));
 }
+```
+
+### Swift code
+
+```swift
+func fib(n: Int) -> Int {
+  if n < 3 {
+    return 1
+  } else {
+    return fib(n: n-2) + fib(n: n-1)
+  }
+}
+
+print(fib(n: 40))
 ```
 
 ### OCaml code
@@ -197,6 +224,7 @@ let () =
 ```
 
 ### JavaScript code
+
 ```javascript
 function fib(n)
 {
